@@ -29,6 +29,12 @@ $response = WebApiCalling(...);
 ...
 ~~~
 
+## Caution
+
+This is simple keeper, so it is not thread safe. Also not async calling safe.
+
+This is for sequential calling for single system from one process/thread.
+
 ## License
 
 MIT License.
