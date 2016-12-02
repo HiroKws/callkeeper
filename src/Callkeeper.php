@@ -2,7 +2,9 @@
 
 namespace Callkeeper;
 
-class Callkeeper
+use Callkeeper\Interfaces\RateKeeper;
+
+class Callkeeper implements RateKeeper
 {
     protected $baseTime;
 
