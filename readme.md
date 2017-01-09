@@ -9,6 +9,8 @@ This implement is logic without using timer. So simple and light weight.
 
 タイマーを使用しない簡単なロジックで実装しているため、シンプルで軽い。
 
+Laravelのワーカーとして利用するために開発したもの。APIコントロールは１常駐プロセスで行うと簡単に実現できる。
+
 ## Usage
 
 ~~~
@@ -22,7 +24,7 @@ use Callkeeper\Callkeeper;
 $keep = new Callkeeper(3, 3000); // 3 times per 3,000 ms (3 seconds)
 
 /* check and wait if needed */
-$keep->timeKeep();
+$keep->limit();
 
 $response = WebApiCalling(...);
 
