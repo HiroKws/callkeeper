@@ -17,5 +17,5 @@ interface RateKeeper
      *
      * This is simple logic without using timer.
      */
-    public function timeKeep();
+    public function limit();
 }
